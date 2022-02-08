@@ -13,4 +13,5 @@ dbconnect.on('error',()=>{
 dbconnect.on('connected',()=>{
     console.log('mongodb conection successfull')
 })
+
 module.exports = mongoose

@@ -1,7 +1,13 @@
 const express = require('express')
+const bodyParser = require("body-parser")
 const app = express()
 
 var dbconnection = require('./db')
+var userRoute = require('./routes/userRoute')
+
+app.use(bodyParser.json())
+app.use(express.json())
+app.use('/api/signup',userRoute)
 
 app.get("/",(req,res)=>{
     res.send('This is from backend')

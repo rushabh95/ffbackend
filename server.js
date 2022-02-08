@@ -4,7 +4,7 @@ const app = express()
 
 var dbconnection = require('./db')
 var userRoute = require('./routes/userRoute')
-
+require('./models/userModel')
 app.use(bodyParser.json())
 app.use(express.json())
 app.use('/api/signup',userRoute)

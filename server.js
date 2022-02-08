@@ -10,7 +10,7 @@ app.use(express.json())
 app.use('/api/signup',userRoute)
 
 app.get("/",(req,res)=>{
-    res.send('This is from backend')
+    res.send('This is test')
 })
 
 
